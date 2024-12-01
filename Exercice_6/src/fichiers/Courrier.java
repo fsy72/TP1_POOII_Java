@@ -13,7 +13,7 @@ public abstract class Courrier {
 	public abstract double affranchir();
 	public void affiche() {
 		System.out.println("Poids: " + poids + " Gramme");
-		System.out.println("Mode d'expédition: " + mode);
+		System.out.println("Mode d'expédition: " + (mode ? "express":"normal"));
 		System.out.println("Adresse de destination: " + adresseDestination);
 		if(adresseDestination.isEmpty())
 			System.out.println("Courrier invalide");
